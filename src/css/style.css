@@ -1,0 +1,64 @@
+body {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    background-color: var(--background-color);
+}
+
+.card {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .painel {
+    background-color: var(--advice-card-color);
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 20px;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.card .painel .title {
+    color: var(--advice-dice-color);
+    font-size: 15px;
+    margin-top: 40px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.card .painel .descricao {
+    color: var(--text-color);
+    font-size: 23px;
+    padding: 23px;
+    text-align: center;
+}
+
+.card .painel .btn-update {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--advice-dice-color);
+    transform: translateY(50%);
+}
+
+.card .painel .btn-update:hover {
+    color: #53FFAB;
+    cursor: pointer;
+    box-shadow: 0 5px 15px var(--advice-dice-color);
+}
+
+@media (min-width: 768px){
+    .card .painel{
+        padding-inline: 50px;
+        width: 500px;
+    }
+
+    .card .painel p {
+        font-size: 21px;
+        padding: 26px;
+    }
+}
